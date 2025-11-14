@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoParts Hub - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AutoParts<span>Hub</span></div>
+
+    <div class="category-dropdown">
+      <button class="dropbtn">All ▼</button>
+      <div class="dropdown-content">
+        <a href="products.html#engine">Engine Parts</a>
+        <a href="products.html#electrical">Electrical</a>
+        <a href="products.html#brakes">Brakes</a>
+        <a href="products.html#tyres">Tyres</a>
+      </div>
+    </div>
+
+    <div class="search-bar">
+      <input id="searchBox" type="text" placeholder="Search automotive parts..." onkeyup="liveSearchHome()" />
+      <button onclick="searchProductsHome()">🔍</button>
+    </div>
+
+    <nav class="nav-links">
+      <a href="login.html" id="navLogin">Login</a>
+      <a href="orders.html">My Orders</a>
+      <a href="cart.html">Cart (<span id="navCartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <!-- slider -->
+  <section class="slider">
+    <div class="slides">
+      <img src="https://static.vecteezy.com/system/resources/previews/028/719/727/non_2x/a-machine-tool-and-other-machines-sitting-on-a-black-background-free-photo.jpg" class="slide active" />
+      <img src="https://static.vecteezy.com/system/resources/previews/029/563/051/non_2x/a-machine-tool-and-other-machines-sitting-on-a-black-background-free-photo.jpg" class="slide" />
+      <img src="https://png.pngtree.com/thumb_back/fw800/background/20240527/pngtree-automobile-gearbox-engine-parts-image_15732496.jpg" class="slide" />
+    </div>
+  </section>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Upgrade Your Ride with Quality Auto Parts</h1>
+      <p>Trusted parts and accessories for cars, bikes and trucks — fast delivery, reliable brands.</p>
+      <div class="hero-actions">
+        <button onclick="window.location.href='products.html'">Shop All Parts</button>
+        <button onclick="window.location.href='products.html#tyres'">Shop Tyres</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category" onclick="window.location.href='products.html#engine'">
+        <img src="https://thumbs.dreamstime.com/z/engine-parts-22720480.jpg" alt="Engine" />
+        <h3>Engine Parts</h3>
+      </div>
+      <div class="category" onclick="window.location.href='products.html#electrical'">
+        <img src="https://thumbs.dreamstime.com/z/electrical-equipment-car-set-auto-parts-isolated-white-background-electrical-equipment-car-set-120666543.jpg" alt="Electrical" />
+        <h3>Electrical</h3>
+      </div>
+      <div class="category" onclick="window.location.href='products.html#brakes'">
+        <img src="https://media.istockphoto.com/id/1317355771/photo/car-suspension-and-disk-brake-system.jpg?s=170667a&w=0&k=20&c=LgWtHoc5WFBAksYha3ZZvVV3tQ6WikGOkodGPDYSMUE=" alt="Brakes" />
+        <h3>Brakes & Suspension</h3>
+      </div>
+      <div class="category" onclick="window.location.href='products.html#tyres'">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.6k_2d6t0KID4xsniIOdUvwHaEv?cb=ucfimgc2&w=768&h=492&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tyres" />
+        <h3>Tyres & Wheels</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Parts</h2>
+    <div id="featuredProducts" class="product-grid"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 AutoParts Hub | Designed by Roshan Hatkar | Upskill Campus Internship</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

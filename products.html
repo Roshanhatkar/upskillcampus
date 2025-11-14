@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products - AutoParts Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AutoParts<span>Hub</span></div>
+    <div class="search-bar">
+      <input id="prodSearch" type="text" placeholder="Search in products..." onkeyup="filterProducts()" />
+      <button onclick="filterProducts()">Search</button>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="prodCartCount">0</span>)</a>
+      <a href="orders.html">My Orders</a>
+    </nav>
+  </header>
+
+  <main>
+    <aside class="filters">
+      <h3>Filters</h3>
+      <label>Category
+        <select id="catFilter" onchange="filterProducts()">
+          <option value="">All</option>
+          <option value="Engine">Engine</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Brakes">Brakes</option>
+          <option value="Tyres">Tyres</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="sortBy" onchange="filterProducts()">
+          <option value="featured">Featured</option>
+          <option value="price_asc">Price: Low → High</option>
+          <option value="price_desc">Price: High → Low</option>
+        </select>
+      </label>
+    </aside>
+
+    <section class="product-section">
+      <h2>All Products</h2>
+      <div id="productList" class="product-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

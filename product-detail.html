@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Detail - AutoParts Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AutoParts<span>Hub</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="product-detail-container">
+    <div id="productDetail"></div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // On page load render requested product by id param
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProductDetail();
+    });
+  </script>
+</body>
+</html>

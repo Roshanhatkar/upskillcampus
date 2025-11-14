@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout - AutoParts Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AutoParts<span>Hub</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="orders.html">My Orders</a>
+    </nav>
+  </header>
+
+  <main class="checkout-container">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+      <input type="text" id="shipName" placeholder="Full Name" required />
+      <input type="text" id="address" placeholder="Shipping Address" required />
+      <input type="text" id="city" placeholder="City" required />
+      <input type="text" id="zipcode" placeholder="Zip Code / PIN" required />
+      <input type="text" id="cardNumber" placeholder="Card Number (demo)" required />
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
